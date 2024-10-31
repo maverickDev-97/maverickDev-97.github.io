@@ -1,3 +1,4 @@
+// Theme toggle
 const initThemeFromLocalStorage = localStorage.getItem("mode");
 
 if (!initThemeFromLocalStorage) {
@@ -23,3 +24,8 @@ const toggleTheme = () => {
 }
 
 themeToggleElement.addEventListener("click", toggleTheme)
+
+// Navigation
+const isHomepage = !document.URL.includes("experience");
+const navigationItems = document.querySelectorAll(".navigation__item");
+navigationItems[isHomepage ? 0 : 1].classList.add("navigation__item--active");

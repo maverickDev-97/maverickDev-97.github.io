@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
   margin: 0;
   padding: 0;
@@ -35,6 +34,9 @@ body {
   background-color: #0b132b;
   color: #fff;
 }
+.dark .navigation__item--active {
+  color: #3d496d;
+}
 
 .grid {
   max-width: 1170px;
@@ -54,14 +56,19 @@ body {
   gap: 32px;
 }
 .navigation__item {
-  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 10px;
   transition: color 0.2s linear;
 }
-.navigation__item:hover {
+.navigation__item:not(.navigation__item--active) {
+  cursor: pointer;
+}
+.navigation__item:hover:not(.navigation__item--active) {
   color: #E4572E;
+}
+.navigation__item--active {
+  color: #b3b6c0;
 }
 .navigation__item:first-child:hover .navigation__icon--hello {
   animation: rotate-hello 0.5s linear 3;
