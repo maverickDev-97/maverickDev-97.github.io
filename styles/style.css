@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  transition: all 0.2s linear;
+}
+
+.light {
+  background-color: #fff;
+  color: #02050e;
+}
+.light .theme-toggle {
+  background-color: #e6e8ef;
+}
+.light .theme-toggle__icon {
+  fill: #02050e;
+}
+.light .hello__link::after {
+  background-color: #02050e;
+}
+
+.dark {
+  background-color: #0b132b;
+  color: #fff;
+}
+
+.grid {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  list-style-type: none;
+  gap: 32px;
+}
+.navigation__item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.2s linear;
+}
+.navigation__item:hover {
+  color: #E4572E;
+}
+.navigation__item:first-child:hover .navigation__icon--hello {
+  animation: rotate-hello 0.5s linear 3;
+}
+.navigation__icon {
+  font-size: 24px;
+  position: relative;
+}
+
+.theme-toggle {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 6px;
+  background-color: #1d284b;
+  z-index: 1;
+}
+.theme-toggle__icon {
+  width: 20px;
+  fill: #fff;
+  transition: all 0.2s linear;
+}
+.theme-toggle:hover .theme-toggle__icon {
+  fill: #E4572E;
+}
+
+.content {
+  min-height: calc(100vh - 176px);
+  display: flex;
+  align-items: center;
+}
+
+.hello {
+  font-size: 40px;
+}
+.hello__name {
+  font-size: inherit;
+}
+.hello__link {
+  position: relative;
+  display: block;
+  margin-top: 16px;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 300;
+}
+.hello__link::after {
+  position: absolute;
+  content: "";
+  bottom: -8px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.2s linear;
+}
+.hello__link:hover::after {
+  width: calc(100% - 48px);
+  left: 48px;
+  background-color: #E4572E;
+}
+.hello__link:hover .hello__icon svg {
+  stroke: #E4572E;
+}
+.hello__icon svg {
+  position: relative;
+  top: 6px;
+}
+
+.social {
+  padding: 32px 0;
+  display: flex;
+  gap: 30px;
+}
+.social__icon {
+  transition: fill 0.2s linear;
+}
+.social__item:hover .social__icon {
+  fill: #E4572E;
+}
+
+@keyframes rotate-hello {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
