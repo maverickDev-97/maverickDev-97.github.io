@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  word-break: keep-all;
 }
 
 a {
@@ -14,6 +15,7 @@ a {
 
 body {
   transition: all 0.2s linear;
+  font-weight: 300;
 }
 
 .light {
@@ -190,7 +192,7 @@ footer {
 
 .experience__heading {
   margin: 32px 0;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: normal;
   text-transform: uppercase;
   color: #b3b6c0;
@@ -203,10 +205,11 @@ footer {
 .experience__item:not(.experience__item:last-child) {
   border-bottom: 1px solid #e9ebf0;
 }
-.experience__title {
-  font-weight: 600;
-}
 .experience__company {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.experience__role {
   margin: 8px 0 4px;
   font-size: 14px;
 }
