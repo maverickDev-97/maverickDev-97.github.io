@@ -67,7 +67,6 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  transition: color 0.2s linear;
   font-size: 14px;
 }
 .navigation__item:not(.navigation__item--active) {
@@ -75,6 +74,7 @@ body {
 }
 .navigation__item:hover:not(.navigation__item--active) {
   color: #E4572E;
+  transition: color 0.2s linear;
 }
 .navigation__item--active {
   color: #b3b6c0;
@@ -83,10 +83,10 @@ body {
   padding: 8px 12px;
   border: 1px solid #d8dbe4;
   border-radius: 4px;
-  transition: all 0.2s linear;
 }
 .navigation__item--outlined:hover {
   border-color: #E4572E;
+  transition: all 0.2s linear;
 }
 .navigation__icon {
   width: 18px;
@@ -108,10 +108,10 @@ body {
 .theme-toggle__icon {
   width: 20px;
   fill: #ffffff;
-  transition: all 0.2s linear;
 }
 .theme-toggle:hover .theme-toggle__icon {
   fill: #E4572E;
+  transition: all 0.2s linear;
 }
 
 main {
@@ -175,11 +175,9 @@ footer {
   display: flex;
   gap: 30px;
 }
-.social__icon {
-  transition: fill 0.2s linear;
-}
 .social__item:hover .social__icon {
   fill: #E4572E;
+  transition: fill 0.2s linear;
 }
 
 .info {
@@ -243,24 +241,25 @@ footer {
   gap: 24px;
 }
 .contact__icon {
-  transition: all 0.2s linear;
   width: 24px;
   height: 24px;
 }
 .contact__item:hover .contact__icon:not(.contact__icon--filled) {
+  transition: all 0.2s linear;
   stroke: #E4572E;
 }
 .contact__item:hover .contact__icon--filled {
+  transition: all 0.2s linear;
   fill: #E4572E;
 }
 .contact__email {
   display: inline-block;
   margin-top: 24px;
   font-weight: 600;
-  transition: color 0.2s linear;
 }
 .contact__email:hover {
   color: #E4572E;
+  transition: color 0.2s linear;
 }
 .contact__copy {
   margin-left: 16px;
@@ -270,7 +269,6 @@ footer {
 .contact__copy svg {
   width: 18px;
   height: 18px;
-  transition: stroke 0.2s linear;
 }
 .contact__copy::before {
   position: absolute;
@@ -287,6 +285,7 @@ footer {
 }
 .contact__copy:hover svg {
   stroke: #E4572E;
+  transition: stroke 0.2s linear;
 }
 
 .dark {
