@@ -84,10 +84,6 @@ body {
   border: 1px solid #d8dbe4;
   border-radius: 4px;
 }
-.navigation__item--outlined:hover {
-  border-color: #E4572E;
-  transition: all 0.2s linear;
-}
 .navigation__icon {
   width: 18px;
   height: 18px;
