@@ -14,7 +14,6 @@ a {
 }
 
 body {
-  transition: all 0.2s linear;
   font-weight: 300;
 }
 
@@ -30,14 +29,6 @@ body {
 }
 .light .hello__link::after {
   background-color: #02050e;
-}
-
-.dark {
-  background-color: #1b1b1d;
-  color: #ffffff;
-}
-.dark .navigation__item--active {
-  color: #626268;
 }
 
 .grid {
@@ -112,7 +103,6 @@ body {
   height: 40px;
   border: 0;
   border-radius: 6px;
-  background-color: #1d284b;
   z-index: 1;
 }
 .theme-toggle__icon {
@@ -211,7 +201,7 @@ footer {
   margin: 32px 0;
 }
 .experience__item:not(.experience__item:last-child) {
-  border-bottom: 1px solid #e9ebf0;
+  border-bottom: 1px solid #d8dbe4;
   padding-bottom: 32px;
 }
 .experience__company {
@@ -297,6 +287,33 @@ footer {
 }
 .contact__copy:hover svg {
   stroke: #E4572E;
+}
+
+.dark {
+  background-color: #1b1b1d;
+  color: #ffffff;
+}
+.dark .navigation__item--active {
+  color: #626268;
+}
+.dark .header {
+  background: #1b1b1d;
+}
+.dark .theme-toggle {
+  background: #323235;
+}
+.dark .experience__item {
+  border-color: #323235 !important;
+}
+.dark .experience__duration {
+  color: #626268;
+}
+.dark .contact {
+  background: #323235;
+  border-color: #626268;
+}
+.dark .contact__copy::before {
+  background-color: #626268;
 }
 
 /*# sourceMappingURL=style.css.map */
