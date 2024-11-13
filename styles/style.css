@@ -19,7 +19,7 @@ body {
 }
 
 .light {
-  background-color: #fff;
+  background-color: #f4f4f5;
   color: #02050e;
 }
 .light .theme-toggle {
@@ -34,7 +34,7 @@ body {
 
 .dark {
   background-color: #1b1b1d;
-  color: #fff;
+  color: #ffffff;
 }
 .dark .navigation__item--active {
   color: #626268;
@@ -51,6 +51,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.sectionTitle {
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #b3b6c0;
+  letter-spacing: 0.2rem;
 }
 
 .navigation {
@@ -103,7 +111,7 @@ body {
 }
 .theme-toggle__icon {
   width: 20px;
-  fill: #fff;
+  fill: #ffffff;
   transition: all 0.2s linear;
 }
 .theme-toggle:hover .theme-toggle__icon {
@@ -137,7 +145,7 @@ main {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #fff;
+  background-color: #ffffff;
   transition: all 0.2s linear;
 }
 .hello__link:hover::after {
@@ -192,18 +200,13 @@ footer {
 
 .experience__heading {
   margin: 32px 0;
-  font-size: 12px;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: #b3b6c0;
-  letter-spacing: 0.2rem;
 }
 .experience__item {
   margin: 32px 0;
-  padding-bottom: 32px;
 }
 .experience__item:not(.experience__item:last-child) {
   border-bottom: 1px solid #e9ebf0;
+  padding-bottom: 32px;
 }
 .experience__company {
   font-weight: 600;
@@ -229,6 +232,65 @@ footer {
 }
 .responsibilities__item {
   margin: 8px 0;
+}
+
+.contact {
+  margin: 48px 0 96px;
+  padding: 32px;
+  border: 1px solid #d8dbe4;
+  border-radius: 16px;
+  background: #ffffff;
+}
+.contact__list {
+  margin-top: 32px;
+  display: flex;
+  gap: 24px;
+}
+.contact__icon {
+  transition: all 0.2s linear;
+  width: 24px;
+  height: 24px;
+}
+.contact__item:hover .contact__icon:not(.contact__icon--filled) {
+  stroke: #E4572E;
+}
+.contact__item:hover .contact__icon--filled {
+  fill: #E4572E;
+}
+.contact__email {
+  display: inline-block;
+  margin-top: 24px;
+  font-weight: 600;
+  transition: color 0.2s linear;
+}
+.contact__email:hover {
+  color: #E4572E;
+}
+.contact__copy {
+  margin-left: 16px;
+  position: relative;
+  top: 5px;
+}
+.contact__copy svg {
+  width: 18px;
+  height: 18px;
+  transition: stroke 0.2s linear;
+}
+.contact__copy::before {
+  position: absolute;
+  top: -4px;
+  left: -12px;
+  display: block;
+  content: "";
+  height: 100%;
+  width: 2px;
+  background-color: #e9ebf0;
+}
+.contact__copy:hover {
+  cursor: pointer;
+}
+.contact__copy:hover svg {
+  stroke: #E4572E;
 }
 
 /*# sourceMappingURL=style.css.map */
