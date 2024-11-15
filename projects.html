@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
-    <title>Document</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Dmytro Pryshliak - Projects</title>
 </head>
+
 <body>
     <div class="experience">
         <div class="grid">
@@ -19,16 +25,20 @@
                     <ul class="navigation">
                         <li class="navigation__item navigation__item"><a href="index.html">Work</a></li>
                         <li class="navigation__item"><a href="projects.html">Projects</a></li>
-                        <li class="navigation__item navigation__item--outlined">
-                            <span class="navigation__icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-                            </span>
-                            <a
-                                href="https://docs.google.com/document/d/1Pb3xS_1Bi9Uyzux7w-u5nrTNZZhZbIXU/edit?usp=drive_link&ouid=110059427384268392737&rtpof=true&sd=true"
-                                target="_blank"
-                            >
-                                Download CV
-                            </a>
+                        <li class="navigation__item">
+                            <button class="external-link">
+                                <span class="navigation__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        class="feather feather-download" viewBox="0 0 24 24">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
+                                    </svg>
+                                </span>
+                                <a href="https://docs.google.com/document/d/1Pb3xS_1Bi9Uyzux7w-u5nrTNZZhZbIXU/edit?usp=drive_link&ouid=110059427384268392737&rtpof=true&sd=true"
+                                    target="_blank">
+                                    Download CV
+                                </a>
+                            </button>
                         </li>
                     </ul>
                 </nav>
@@ -40,8 +50,89 @@
                     </svg>
                 </button>
             </header>
+            <main>
+                <section class="title">
+                    <h1 class="title__heading">Personal projects</h2>
+                        <p class="title__brief">Sometimes I can be inspired to build something useful for my purposes :)
+                        </p>
+                </section>
+                <section class="projects">
+                    <h2 class="projects__heading sectionTitle">Check them out:</h3>
+                        <div class="projects__item">
+                            <h3 class="projects__company">
+                                Macmillan Randomizer
+                            </h3>
+                            <p class="projects__description">
+                                Improve your English vocabulary by using this app. Get a random unknown word from 2,500+
+                                words, navigate to the Cambridge dictionary to learn the definition of this word and
+                                usage examples.<br> You can safely close the app if you've saved the words and come back
+                                to
+                                learn them later.
+                            </p>
+                            <div class="projects__linkRow">
+                                <button class="projects__link external-link">
+                                    <span class="navigation__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="feather feather-code">
+                                            <polyline points="16 18 22 12 16 6" />
+                                            <polyline points="8 6 2 12 8 18" />
+                                        </svg>
+                                    </span>
+                                    <a href="https://github.com/maverickDev-97/macmillan-randomizer"
+                                        target="_blank">
+                                        Source code
+                                    </a>
+                                </button>
+                                <button class="projects__link external-link">
+                                    <span class="navigation__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="feather feather-external-link">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                            <polyline points="15 3 21 3 21 9" />
+                                            <line x1="10" y1="14" x2="21" y2="3" />
+                                        </svg>
+                                    </span>
+                                    <a href="https://macmillan-randomizer.onrender.com/"
+                                        target="_blank">
+                                        Live demo
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="projects__item projects__item--construction">
+                            <h3 class="projects__company">
+                                Car scraper
+                            </h3>
+                            <p class="projects__description">
+                                I faced with the problem of monitoring the prices of auction lots sold filtered by
+                                wanted trim, production year, I created the app that can be used to collect data, filter
+                                it and save it locally. <br>
+                                The implementation can be unified, but in my case it wasn't needed
+                            </p>
+                            <div class="projects__linkRow">
+                                <button class="projects__link external-link">
+                                    <span class="navigation__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="feather feather-code">
+                                            <polyline points="16 18 22 12 16 6" />
+                                            <polyline points="8 6 2 12 8 18" />
+                                        </svg>
+                                    </span>
+                                    <a href="#"
+                                        target="_blank">
+                                        Source code
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                </section>
+            </main>
         </div>
     </div>
     <script src="./script.js"></script>
 </body>
+
 </html>
