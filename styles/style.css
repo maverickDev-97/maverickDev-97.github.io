@@ -46,7 +46,8 @@ body {
 }
 
 .grid {
-  max-width: 970px;
+  max-width: 1130px;
+  padding: 0 30px;
   margin: 0 auto;
   position: relative;
 }
@@ -252,25 +253,22 @@ footer {
   transition: all 0.2s linear;
   fill: #E4572E;
 }
-.contact__email {
-  display: inline-block;
+
+.email {
+  display: flex;
+  gap: 24px;
   margin-top: 24px;
   font-weight: 600;
 }
-.contact__email:hover {
-  color: #E4572E;
-  transition: color 0.2s linear;
-}
-.contact__copy {
-  margin-left: 16px;
+.email__copy {
   position: relative;
   top: 5px;
 }
-.contact__copy svg {
+.email__copy svg {
   width: 18px;
   height: 18px;
 }
-.contact__copy::before {
+.email__copy::before {
   position: absolute;
   top: -4px;
   left: -12px;
@@ -280,12 +278,16 @@ footer {
   width: 2px;
   background-color: #e9ebf0;
 }
-.contact__copy:hover {
+.email__copy:hover {
   cursor: pointer;
 }
-.contact__copy:hover svg {
+.email__copy:hover svg {
   stroke: #E4572E;
   transition: stroke 0.2s linear;
+}
+.email:hover {
+  color: #E4572E;
+  transition: color 0.2s linear;
 }
 
 .dark {
@@ -325,8 +327,39 @@ footer {
   border-color: #626268;
   color: #ffffff;
 }
-.dark .contact__copy::before {
+.dark .email__copy::before {
   background-color: #626268;
+}
+
+@media (max-width: 768px) {
+  .title__brief {
+    max-width: 100%;
+  }
+  .projects__description {
+    max-width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .external-link {
+    font-size: 12px;
+  }
+  .navigation {
+    gap: 16px;
+  }
+  .navigation__item {
+    font-size: 12px;
+  }
+  .contact {
+    margin-top: 24px;
+    padding: 24px 16px;
+    text-align: center;
+  }
+  .contact__list {
+    justify-content: center;
+  }
+  .email {
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
