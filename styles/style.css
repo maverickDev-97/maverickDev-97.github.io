@@ -261,6 +261,7 @@ footer {
   font-weight: 600;
 }
 .email__copy {
+  display: none;
   position: relative;
   top: 5px;
 }
